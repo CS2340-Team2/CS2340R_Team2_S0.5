@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/sleepHoursEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Sleep Hours"/>
+
+    <EditText
+        android:id="@+id/fitnessMinutesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Fitness Minutes"/>
+
+<!--    TODO 4: Create XML button object that binds to the saveButton instance in WellnessActivtity-->
+<!--    Make sure to abide by the constraints outlined by LinearLayout when setting the layout width and height -->
+
+
+
+
+    <Button
+        android:id="@+id/toFitnessTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Fitness Timer"/>
+</LinearLayout>
