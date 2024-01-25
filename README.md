@@ -3,3 +3,4 @@
 ## Project Members
 - Arvind Ganeshkumar
 - Venusha Buwaneka
+- Amanda Rolan
