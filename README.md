@@ -4,3 +4,4 @@
 - Arvind Ganeshkumar
 - Venusha Buwaneka
 - Amanda Rolan
+- Colin Scott
