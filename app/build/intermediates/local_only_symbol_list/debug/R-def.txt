@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id fitnessMinutesEditText
+id fitnessMinutesTextView
+id saveButton
+id sleepHoursEditText
+id sleepHoursTextView
+id startStopButton
+id timerTextView
+id toFitnessTimerButton
+id toWellnessDashboardButton
+layout activity_fitness_timer
+layout activity_wellness_dashboard
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.AndroidProjectTemplate
+style Theme.AndroidProjectTemplate
+xml backup_rules
+xml data_extraction_rules
