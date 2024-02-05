@@ -29,23 +29,10 @@ public class FitnessActivity extends AppCompatActivity {
 
 
         // TODO 5: Set content view to activity_fitness_timer.xml file and assign TextViews and button to XML bindings
-        setContentView(R.layout.activity_fitness_timer);
-        timerTextView = findViewById(R.id.timerTextView);
-        sleepHoursTextView = findViewById(R.id.sleepHoursTextView);
-        fitnessMinutesTextView = findViewById(R.id.fitnessMinutesTextView);
-        startStopButton = findViewById(R.id.startStopButton);
 
 
 
         // TODO 6: Retrieve WellnessViewModel data from bundle and set 'sleepHoursTextView' and 'fitnessMinutesTextView' displays to these values
-        Intent intent = getIntent();
-        if (intent != null && intent.hasExtra("sleepHours") && intent.hasExtra("fitnessMinutes")) {
-            int sleepHours = intent.getIntExtra("sleepHours", 0);
-            int fitnessMinutes = intent.getIntExtra("fitnessMinutes", 0);
-
-            sleepHoursTextView.setText("Sleep Hours: " + String.valueOf(sleepHours));
-            fitnessMinutesTextView.setText("Fitness Mintues: " + String.valueOf(fitnessMinutes));
-        }
 
 
         startStopButton.setOnClickListener(v -> {
