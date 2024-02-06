@@ -18,4 +18,3 @@ public class WellnessData {
         this.fitnessMinutes = fitnessMinutes;
     }
 }
-

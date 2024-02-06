@@ -61,15 +61,15 @@ public class WellnessActivity extends AppCompatActivity {
      */
     protected void saveConfigurationData(EditText sleepText, EditText fitnessText) {
 
-            int sleepHours = sleepText.getText().toString().equals("") ? 0 : Integer.parseInt(sleepText.getText().toString());
-            int fitnessMinutes = fitnessText.getText().toString().equals("") ? 0 : Integer.parseInt(fitnessText.getText().toString());
-            viewModel.updateData(sleepHours, fitnessMinutes);
-            // Clear the EditText fields
-            sleepEditText.setText("");
-            fitnessEditText.setText("");
+        int sleepHours = sleepText.getText().toString().equals("") ? 0 : Integer.parseInt(sleepText.getText().toString());
+        int fitnessMinutes = fitnessText.getText().toString().equals("") ? 0 : Integer.parseInt(fitnessText.getText().toString());
+        viewModel.updateData(sleepHours, fitnessMinutes);
+        // Clear the EditText fields
+        sleepEditText.setText("");
+        fitnessEditText.setText("");
 
-            // Hide the keyboard
-            hideKeyboard();
+        // Hide the keyboard
+        hideKeyboard();
     }
 
 

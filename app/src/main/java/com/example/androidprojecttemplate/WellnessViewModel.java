@@ -32,4 +32,3 @@ public class WellnessViewModel {
         wellnessData.setSleepHours(sleep);
     }
 }
-
