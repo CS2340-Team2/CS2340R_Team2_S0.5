@@ -56,6 +56,13 @@ public class FitnessActivity extends AppCompatActivity {
              * Text on the 'startStopButton' should change from "Start" to "Stop" and vice versa
              * HINT: look at the implementation of runTimer
              */
+            if (stopwatchRunning) {
+                stopwatchRunning=false;
+                startStopButton.setText("Start");
+            } else {
+                stopwatchRunning=true;
+                startStopButton.setText("Stop");
+            }
 
 
         });
