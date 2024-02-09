@@ -13,6 +13,25 @@ public class ExampleUnitTest {
     // TODO 8: Write a unit test for ensuring correct behavior of the updateData function you implemented in TODO 2 in WellnessViewModel
     @Test
     public void unitTest() {
+        WellnessViewModel viewModel = new WellnessViewModel();
+
+        int sleep = 7;
+        int fitness = 40;
+
+        viewModel.updateData(sleep, fitness);
+
+        assertEquals(sleep, viewModel.getWellnessData().getSleepHours());
+        assertEquals(fitness, viewModel.getWellnessData().getFitnessMinutes());
+
+        int newSleep = 8;
+        int newFitness = 55;
+
+        viewModel.updateData(newSleep, newFitness);
+
+        assertEquals(newSleep, viewModel.getWellnessData().getSleepHours());
+        assertEquals(newFitness, viewModel.getWellnessData().getFitnessMinutes());
+
+
     }
 
 }
