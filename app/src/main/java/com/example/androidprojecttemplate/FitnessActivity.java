@@ -55,6 +55,8 @@ public class FitnessActivity extends AppCompatActivity {
              * HINT: look at the implementation of runTimer
              */
 
+            stopwatchRunning = !stopwatchRunning;
+            startStopButton.setText(stopwatchRunning ? "Stop" : "Start");
 
         });
 
@@ -88,7 +90,7 @@ public class FitnessActivity extends AppCompatActivity {
 
 
     /**
-        DO NOT MODIFY!
+     DO NOT MODIFY!
      */
     private String formatTime(int totalSecs) {
         int hours = totalSecs / 3600;
