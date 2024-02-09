@@ -1,7 +1,7 @@
-#Mon Feb 05 18:14:34 CET 2024
-base.0=/Users/shado/Documents/College/Spring 2024/CS2340/CS2340R_Team2_S0.5/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/shado/Documents/College/Spring 2024/CS2340/CS2340R_Team2_S0.5/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/shado/Documents/College/Spring 2024/CS2340/CS2340R_Team2_S0.5/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+#Fri Feb 09 09:01:11 CET 2024
+base.0=C\:\\Users\\cscot\\OneDrive\\CS2340R_Team2_S0.5\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\cscot\\OneDrive\\CS2340R_Team2_S0.5\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\cscot\\OneDrive\\CS2340R_Team2_S0.5\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

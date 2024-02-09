@@ -29,6 +29,13 @@ public class FitnessActivity extends AppCompatActivity {
 
 
         // TODO 5: Set content view to activity_fitness_timer.xml file and assign TextViews and button to XML bindings
+        setContentView(R.layout.activity_fitness_timer);
+
+        timerTextView = findViewById(R.id.timerTextView);
+        sleepHoursTextView = findViewById(R.id.sleepHoursTextView);
+        fitnessMinutesTextView = findViewById(R.id.fitnessMinutesTextView);
+        startStopButton = findViewById(R.id.startStopButton);
+
 
 
 
