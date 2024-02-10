@@ -4,5 +4,6 @@
 - Arvind Ganeshkumar
 - Venusha Buwaneka
 - Amanda Rolan
+- Collin Scott
 - Akhilsai Ujjina
 - Saket Suman
