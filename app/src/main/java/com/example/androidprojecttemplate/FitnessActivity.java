@@ -29,11 +29,20 @@ public class FitnessActivity extends AppCompatActivity {
 
 
         // TODO 5: Set content view to activity_fitness_timer.xml file and assign TextViews and button to XML bindings
-
-
+        setContentView(R.layout.activity_fitness_timer);
+        sleepHoursTextView = findViewById(R.id.sleepHoursTextView);
+        fitnessMinutesTextView = findViewById(R.id.fitnessMinutesTextView);
+        timerTextView = findViewById(R.id.timerTextView);
+        startStopButton = findViewById(R.id.startStopButton);
 
         // TODO 6: Retrieve WellnessViewModel data from bundle and set 'sleepHoursTextView' and 'fitnessMinutesTextView' displays to these values
-
+        Bundle data = getIntent().getExtras();
+        if (data != null) {
+            int sleepHours = data.getInt("sleepHours", 0);
+            int fitnessMins = data.getInt("fitnessMinutes", 0);
+            sleepHoursTextView.setText("Sleep Hours: " + sleepHours);
+            fitnessMinutesTextView.setText("Fitness Minutes: " + fitnessMins);
+        }
 
         startStopButton.setOnClickListener(v -> {
             runTimer(); // Don't change or remove this line!
@@ -43,16 +52,21 @@ public class FitnessActivity extends AppCompatActivity {
              * Text on the 'startStopButton' should change from "Start" to "Stop" and vice versa
              * HINT: look at the implementation of runTimer
              */
-
-
+            if (stopwatchRunning) {
+                stopwatchRunning = false;
+                startStopButton.setText("Start");
+            } else {
+                stopwatchRunning = true;
+                startStopButton.setText("Stop");
+            }
         });
 
 
         // DO NOT MODIFY
         Button toWellnessDashboardButton = findViewById(R.id.toWellnessDashboardButton);
         toWellnessDashboardButton.setOnClickListener(v -> {
-            Intent intent2 = new Intent(FitnessActivity.this, WellnessActivity.class);
-            startActivity(intent2);
+            Intent intent = new Intent(FitnessActivity.this, WellnessActivity.class);
+            startActivity(intent);
         });
 
     }
