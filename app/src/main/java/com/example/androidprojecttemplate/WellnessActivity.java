@@ -37,15 +37,15 @@ public class WellnessActivity extends AppCompatActivity {
         toFitnessTimerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(WellnessActivity.this, FitnessActivity.class);
-                i.putExtra("sleepHours", viewModel.getWellnessData().getSleepHours());
-                i.putExtra("fitnessMinutes", viewModel.getWellnessData().getFitnessMinutes());
-                startActivity(i);
+                Intent intent = new Intent(WellnessActivity.this, FitnessActivity.class);
+                intent.putExtra("sleepHours", viewModel.getWellnessData().getSleepHours());
+                intent.putExtra("fitnessMinutes", viewModel.getWellnessData().getFitnessMinutes());
+                startActivity(intent);
             }
         });
 
         // TODO 3: program the saveButton with the saveConfigurationData callback when clicked
-        saveButton.setOnClickListener(new View.OnClickListener(){
+        saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 saveConfigurationData(sleepEditText, fitnessEditText);
@@ -60,9 +60,8 @@ public class WellnessActivity extends AppCompatActivity {
      * DO NOT MODIFY
      */
     protected void saveConfigurationData(EditText sleepText, EditText fitnessText) {
-
-            int sleepHours = sleepText.getText().toString().equals("") ? 0 : Integer.parseInt(sleepText.getText().toString());
-            int fitnessMinutes = fitnessText.getText().toString().equals("") ? 0 : Integer.parseInt(fitnessText.getText().toString());
+            int sleepHours = Integer.parseInt(sleepText.getText().toString());
+            int fitnessMinutes = Integer.parseInt(fitnessText.getText().toString());
             viewModel.updateData(sleepHours, fitnessMinutes);
             // Clear the EditText fields
             sleepEditText.setText("");
