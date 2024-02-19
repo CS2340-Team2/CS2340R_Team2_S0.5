@@ -27,7 +27,7 @@ public class WellnessViewModel {
 
 
     // TODO 2 : Implement updateData function using helpers in wellnessData to update model
-    public void updateData(int sleep, int fitness) { //I did this todo
+    public void updateData(int sleep, int fitness) {
         wellnessData.setSleepHours(sleep);
         wellnessData.setFitnessMinutes(fitness);
     }
